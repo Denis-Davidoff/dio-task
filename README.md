@@ -41,33 +41,30 @@ REDIS_PORT=6379
 
 MONOBANK_API_URL=https://api.monobank.ua/bank/currency
 
-MONOBANK_RATES_TTL=60
+MONOBANK_RATES_TTL=60 # Redis cache time in seconds
 ```
-
-MONOBANK_RATES_TTL=60 - Redis cache time in seconds
 
 ## Compile and run the project
 
 ```bash
 # development
 $ npm run start
+or
+$ yarn start
 
 # watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
+or
+yarn start:dev
 ```
 
 ## Swagger API
 
 Swagger API documentation is available at http://localhost:3000/api
 
-## API Endpoints
-
-### GET /
-
 ## Run tests
+
+Tests is not implemented yet 
 
 ```bash
 # unit tests

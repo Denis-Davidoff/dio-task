@@ -40,7 +40,11 @@ REDIS_HOST=localhost
 REDIS_PORT=6379
 
 MONOBANK_API_URL=https://api.monobank.ua/bank/currency
+
+MONOBANK_RATES_TTL=60
 ```
+
+MONOBANK_RATES_TTL=60 - Redis cache time in seconds
 
 ## Compile and run the project
 

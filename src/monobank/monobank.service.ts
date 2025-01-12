@@ -1,6 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import {RedisService} from "@/redis/redis.service";
 import {from} from "rxjs";
+import * as process from "node:process";
 
 @Injectable()
 export class MonobankService {
@@ -15,7 +16,7 @@ export class MonobankService {
         if (json.errorDescription) {
             throw new Error(json.errorDescription);
         }
-        await this.redisService.set('monobank', json, 60); // 1 minute
+        await this.redisService.set('monobank', json, Number(process.env.MONOBANK_RATES_TTL));
         this.logger.log('Rates updated');
         return json;
     }

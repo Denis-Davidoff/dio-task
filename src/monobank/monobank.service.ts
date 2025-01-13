@@ -45,7 +45,7 @@ export class MonobankService {
         exchanges: Array<number>
     }> {
         let rates = await this.getRates();
-        this.logger.log('Rates qty: ' + (rates && rates.length));
+        this.logger.log('Rates qty: ' + (rates?.length || 0));
 
         const ratesMap = new Map();
         for (let rate of rates) {

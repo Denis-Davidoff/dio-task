@@ -70,10 +70,19 @@ Tests is not implemented yet
 # unit tests
 $ npm run test
 
-# e2e tests
+# e2e tests - not implemented
 $ npm run test:e2e
 
-# test coverage
+# test coverage, 100% for MonobankService
 $ npm run test:cov
 ```
+
+### Coverage
+
+MonobankService coverage is 100%
+
+src/monobank              |     100 |      100 |     100 |     100 |                   
+
+monobank.service.ts      |     100 |      100 |     100 |     100 |        
+
 

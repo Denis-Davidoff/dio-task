@@ -1,5 +1,5 @@
 import { Injectable, OnModuleDestroy, Logger } from '@nestjs/common';
-import Redis, { Result, Callback } from "ioredis";
+import Redis from "ioredis";
 
 type RedisValueType = 'string' | 'number' | 'object' | 'boolean';
 type RedisResult = string | number | object | boolean;

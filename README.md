@@ -30,7 +30,7 @@ Redis will be available on localhost:6379
 
 ## Configuration with .env file
 
-Create a .env file in the root of the project with the following content:
+Create the .env file in the project's root with the following content:
 
 ```bash
 
@@ -63,8 +63,6 @@ yarn start:dev
 Swagger API documentation is available at http://localhost:3000/api
 
 ## Run tests
-
-Tests is not implemented yet 
 
 ```bash
 # unit tests
